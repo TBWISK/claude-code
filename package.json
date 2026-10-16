@@ -42,7 +42,7 @@
     "lint:fix": "biome lint --fix src/",
     "format": "biome format --write src/",
     "prepare": "git config core.hooksPath .githooks",
-    "test": "bun test",
+    "test": "bun test; node scripts/setup.js",
     "check:unused": "knip-bun",
     "health": "bun run scripts/health-check.ts",
     "docs:dev": "npx mintlify dev"
